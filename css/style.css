@@ -116,49 +116,49 @@ h2 {
 }
 
 .heckla{
-  background-image: url("../hekla.jpg");
+  background-image: url("../images/hekla.jpg");
   display: flex;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .first{
-  background-image: url("../first.jpg");
+  background-image: url("../images/first.jpg");
   display: flex;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .edf{
-  background-image: url("../edf.jpg");
+  background-image: url("../images/edf.jpg");
   display: flex;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .arche{
-  background-image: url("../arche.jpg");
+  background-image: url("../images/arche.jpg");
   display: flex;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .trinity{
-  background-image: url("../trinity.jpg");
+  background-image: url("../images/trinity.jpg");
   display: flex;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .majunga{
-  background-image: url("../majunga.jpg");
+  background-image: url("../images/majunga.jpg");
   display: flex;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .total{
-  background-image: url("../total.jpg");
+  background-image: url("../images/total.jpg");
   display: flex;
   background-size: cover;
   background-repeat: no-repeat;
@@ -166,7 +166,7 @@ h2 {
  }
 
 .coeur_defense{
-  background-image: url("../coeur_defense.jpg");
+  background-image: url("../images/coeur_defense.jpg");
   display: flex;
   background-size: cover;
   background-repeat: no-repeat;
@@ -174,14 +174,14 @@ h2 {
 }
 
 .alto{
-  background-image: url("../alto.jpg");
+  background-image: url("../images/alto.jpg");
   display: flex;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .ste_generale{
-  background-image: url("../ste_generale.jpg");
+  background-image: url("../images/ste_generale.jpg");
   display: flex;
   background-size: cover;
   background-repeat: no-repeat;
