@@ -23,7 +23,7 @@
         <main>
             <h2 class="hero">Sasaki Haise</h2>
             <section class="anime-container">
-                <article class="container img">
+                <article class="img">
 
                     <div class="arche"></div>
                     <div class="heckla"></div>
@@ -72,24 +72,16 @@
                 translateY: '-200%',
                 duration: 4000,
             },'-=1600')
-            
+
             window.addEventListener('scroll',() => {
-                let degrees = Math.trunc(window.scrollY - window.scrollY * 0.9);
-                // let scales = Math.abs(Math.trunc(1 + window.scrollY - (window.scrollY * 90 / 100)));
-                // if (scales > 2) {
-                //     scales = 2;
-                // }
-                let rotating = anime({
-                    targets: '.anime-container',
-                    // scaleX: scales,
-                    // scaleY: scales,
-                    rotate: degrees,
-                    easing: 'easeOutExpo',
-                    duration: 750,
-                    autoplay: false,
-                })
-                rotating.play()
+                let value = Math.trunc(window.scrollY - window.scrollY * 0.9);
+                let root = document.querySelector(':root');
+                let rootStyle = getComputedStyle(root);
+                let top = rootStyle.getPropertyValue('--top');
+                let total_value = value + "vh"
+                root.style.setProperty('--top', total_value);
             })
+
             let qualities = ['Elegantes','Majestueuses','Modernes','Imposantes'];
             let writing = new Typewriter('.hero', {
                 loop: true,

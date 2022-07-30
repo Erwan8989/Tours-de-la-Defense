@@ -1,3 +1,7 @@
+:root {
+  --top: 1px;
+}
+
 header, section {
   padding: 0 25px;
   width: 100%;
@@ -97,6 +101,8 @@ h2 {
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
   z-index: -1;
+  top: var(--top);
+  transition-duration: 1s;
 }
 
 .anime-container article {
