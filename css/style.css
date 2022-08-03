@@ -1,5 +1,7 @@
 :root {
-  --top: 1px;
+  --top1: 1px;
+  --top2: 1px;
+  --top3: 1px;
 }
 
 header, section {
@@ -97,12 +99,30 @@ h2 {
 .anime-container {
   height: calc(100vh - 3rem);
   background: transparent;
-  position: relative;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
   z-index: -1;
+  /*position: relative;
   top: var(--top);
-  transition-duration: 1s;
+  transition-duration: 1s; */
+}
+
+.bande{
+  position: relative;
+  z-index: -1;
+  transition-duration: 10s;
+}
+
+.bande1{
+  top: var(--top1);
+}
+
+.bande2{
+  top: var(--top2);
+}
+
+.bande3{
+  top: var(--top3);
 }
 
 .anime-container article {
