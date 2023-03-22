@@ -38,7 +38,7 @@
                 </article>
             </section>
 
-            <section class="card-container">
+            <section class="card-container" style="opacity: 0.2" id="card">
 
             </section>
         </main>
@@ -74,11 +74,14 @@
             },'-=1600')
 
             window.addEventListener('scroll',() => {
-                let value = Math.trunc(window.scrollY - window.scrollY * 0.9);
+                let value = Math.trunc(window.scrollY - window.scrollY * 0.4);
                 let root = document.querySelector(':root');
+                let card = document.getElementById('card');
                 let rootStyle = getComputedStyle(root);
                 let heightWindow = window.innerHeight;
                 let currentScroll = window.scrollY;
+
+                console.log(window.scrollY)
 
                 if (currentScroll < heightWindow) {
 
@@ -86,13 +89,17 @@
                     let top2 = rootStyle.getPropertyValue('--top2');
                     let top3 = rootStyle.getPropertyValue('--top3');
 
-                    let total_value1 = value + "vh"
-                    let total_value2 = value * 1.2 + "vh"
-                    let total_value3 = value * 1.3 + "vh"
+                    let total_value1 = value + "px"
+                    let total_value2 = value * 1.2 + "px"
+                    let total_value3 = value * 1.3 + "px"
 
                     root.style.setProperty('--top1', total_value1);
                     root.style.setProperty('--top2', total_value2);
                     root.style.setProperty('--top3', total_value3);
+
+                    let test = ((currentScroll * 100) / heightWindow) / 100
+
+                    card.style.setProperty('opacity', test)
                 }
             })
 
