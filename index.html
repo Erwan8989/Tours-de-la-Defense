@@ -87,10 +87,10 @@
                     let top2 = rootStyle.getPropertyValue('--top2');
                     let top3 = rootStyle.getPropertyValue('--top3');
 
-                    let total_value1 = value + "px"
-                    let total_value2 = value * 1.2 + "px"
-                    let total_value3 = value * 1.3 + "px"
-                    let total_value4 = value * 1.4 + "px"
+                    let total_value1 = value + "px";
+                    let total_value2 = value * 1.2 + "px";
+                    let total_value3 = value * 1.3 + "px";
+                    let total_value4 = value * 1.4 + "px";
 
                     root.style.setProperty('--top1', total_value1);
                     root.style.setProperty('--top2', total_value2);
@@ -98,7 +98,9 @@
                     root.style.setProperty('--top4', total_value4);
 
                     let test = ((currentScroll * 100) / heightWindow) / 100
-                    card.style.setProperty('opacity', test)
+                    card.style.setProperty('opacity', test);
+                } else {
+                    card.style.setProperty('opacity', 1);
                 }
             })
 
