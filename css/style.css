@@ -2,6 +2,7 @@
   --top1: 1px;
   --top2: 1px;
   --top3: 1px;
+  --top4: 1px;
 }
 
 header, section {
@@ -97,7 +98,7 @@ h2 {
 }
 
 .anime-container {
-  height: calc(100vh - 3rem);
+  height: calc(100vh - 4rem);
   background: transparent;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
@@ -123,6 +124,10 @@ h2 {
 
 .bande3{
   top: var(--top3);
+}
+
+.bande4{
+  top: var(--top4);
 }
 
 .anime-container article {
@@ -218,7 +223,7 @@ h2 {
   z-index: 10;
   min-height: 100vh;
   padding: 2rem;
-  height: 120vh;
+  height: 100vh;
   background: #efdacc;
   display: -webkit-box;
   display: -ms-flexbox;
