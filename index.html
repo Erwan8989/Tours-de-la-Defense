@@ -77,18 +77,23 @@
                 let value = Math.trunc(window.scrollY - window.scrollY * 0.9);
                 let root = document.querySelector(':root');
                 let rootStyle = getComputedStyle(root);
+                let heightWindow = window.innerHeight;
+                let currentScroll = window.scrollY;
 
-                let top1 = rootStyle.getPropertyValue('--top1');
-                let top2 = rootStyle.getPropertyValue('--top2');
-                let top3 = rootStyle.getPropertyValue('--top3');
+                if (currentScroll < heightWindow) {
 
-                let total_value1 = value + "vh"
-                let total_value2 = value * 1.2 + "vh"
-                let total_value3 = value * 1.3 + "vh"
+                    let top1 = rootStyle.getPropertyValue('--top1');
+                    let top2 = rootStyle.getPropertyValue('--top2');
+                    let top3 = rootStyle.getPropertyValue('--top3');
 
-                root.style.setProperty('--top1', total_value1);
-                root.style.setProperty('--top2', total_value2);
-                root.style.setProperty('--top3', total_value3);
+                    let total_value1 = value + "vh"
+                    let total_value2 = value * 1.2 + "vh"
+                    let total_value3 = value * 1.3 + "vh"
+
+                    root.style.setProperty('--top1', total_value1);
+                    root.style.setProperty('--top2', total_value2);
+                    root.style.setProperty('--top3', total_value3);
+                }
             })
 
             let qualities = ['Elegantes','Majestueuses','Modernes','Imposantes'];
