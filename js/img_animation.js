@@ -10,7 +10,7 @@ tl.add({
 })
 tl.add({
 	targets: 'article div',
-	opacity: .5,
+	opacity: .7,
 	marginRight: '.5rem',
 	delay: anime.stagger(100)
 })
