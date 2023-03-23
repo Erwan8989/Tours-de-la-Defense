@@ -25,7 +25,7 @@ window.addEventListener('scroll',() => {
 	let value = Math.trunc(window.scrollY - window.scrollY * 0.35);
 	let root = document.querySelector(':root');
 	let card = document.getElementById('card');
-	let idd = document.getElementById('idd');
+	let typeWriterId = document.getElementById('typeWriterId');
 	let rootStyle = getComputedStyle(root);
 	let heightWindow = window.innerHeight + 64;
 	let currentScroll = window.scrollY + 64;
@@ -53,17 +53,17 @@ window.addEventListener('scroll',() => {
 	}
 
 	if (currentScroll - 64 === 0) {
-		idd.classList.remove("hide");
-		idd.classList.add("display");
+		typeWriterId.classList.remove("hide");
+		typeWriterId.classList.add("display");
 	} else {
-		idd.classList.add("hide");
-		idd.classList.remove("display");
+		typeWriterId.classList.add("hide");
+		typeWriterId.classList.remove("display");
 	}
 })
 
 setTimeout(function () {
 	let qualities = ['Elegantes','Majestueuses','Modernes','Imposantes'];
-	let writing = new Typewriter('.hero', {
+	let writing = new Typewriter('.typeWriterClass', {
 		loop: true,
 		delay: 100,
 	})
