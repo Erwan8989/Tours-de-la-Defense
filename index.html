@@ -21,7 +21,7 @@
             <ion-icon name="menu-outline"></ion-icon>
         </header>
         <main>
-            <h2 class="hero">Sasaki Haise</h2>
+            <h2 class="hero"></h2>
             <section class="anime-container">
                 <article class="img">
                     <div class="arche bande bande1"></div>
@@ -104,20 +104,23 @@
                 }
             })
 
+            setTimeout(function () {
             let qualities = ['Elegantes','Majestueuses','Modernes','Imposantes'];
             let writing = new Typewriter('.hero', {
                 loop: true,
-                delay: 75,
+                delay: 100,
             })
-            for (let i = 0; i < qualities.length; i++) {
-                writing
-                    .pauseFor(2500)
-                    .typeString(qualities[i])
-                    .pauseFor(800)
-                    .deleteAll()
-                    .pauseFor(500)
-                    .start();
-            }
+                for (let i = 0; i < qualities.length; i++) {
+                    writing
+                            .pauseFor(1000)
+                            .typeString(qualities[i])
+                            .pauseFor(1500)
+                            .deleteAll(50)
+                            .pauseFor(500)
+                            .start();
+                }
+            }, 2750)
+
             // name.addEventListener('mouseleave',() => {
             //     console.log('test2')
             //     rotating.reverse()
