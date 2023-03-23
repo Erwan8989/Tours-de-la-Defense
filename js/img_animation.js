@@ -1,6 +1,6 @@
 let tl = anime.timeline({
 	easing: 'easeOutExpo',
-	duration: 750,
+	duration: 850,
 })
 tl.add({
 	targets: 'article div',
