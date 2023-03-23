@@ -386,3 +386,13 @@ h2 {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+.display {
+  opacity: 1 !important;
+  transition-duration: 0.75s;
+}
+
+.hide {
+  opacity: 0 !important;
+  transition-duration: 0.75s;
+}

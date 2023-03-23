@@ -21,7 +21,7 @@
             <ion-icon name="menu-outline"></ion-icon>
         </header>
         <main>
-            <h2 class="hero"></h2>
+            <h2 class="hero" id="idd"></h2>
             <section class="anime-container">
                 <article class="img">
                     <div class="arche bande bande1"></div>
@@ -77,6 +77,7 @@
                 let root = document.querySelector(':root');
                 let card = document.getElementById('card');
                 let img_id = document.getElementById('img_id');
+                let idd = document.getElementById('idd');
                 let rootStyle = getComputedStyle(root);
                 let heightWindow = window.innerHeight + 64;
                 let currentScroll = window.scrollY + 64;
@@ -101,6 +102,14 @@
                     card.style.setProperty('opacity', test);
                 } else {
                     card.style.setProperty('opacity', 1);
+                }
+
+                if (currentScroll - 64 === 0) {
+                    idd.classList.remove("hide");
+                    idd.classList.add("display");
+                } else {
+                    idd.classList.add("hide");
+                    idd.classList.remove("display");
                 }
             })
 
